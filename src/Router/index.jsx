@@ -1,19 +1,34 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Home from "../pages/Home/Home";
 import About from "./../pages/About/About";
 import Error from "./../pages/Error/Error";
+import Layout from "../pages/Layout/Layout.jsx";
+import Signup from "../pages/Auth/Signup.jsx";
+import Signin from "../pages/Auth/Signin.jsx";
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout />,
+        errorElement: < Error/>,
+        children: [
+            {
+                path: '/',
+                element: <Home/>
+            },
+            {
+                path: '/about',
+                element: <About/>
+            }
+        ]
+    },
+    {
+        path: '/sign-up',
+        element: <Signup/>
+    },
+    {
+        path: "/sign-in",
+        element: <Signin/>
+    }
+])
 
-const index = () => {
-  return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/*" element={<Error />} />
-      </Routes>
-    </div>
-  );
-};
-
-export default index;
+export  default  router;
