@@ -1,4 +1,7 @@
 .header__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px 0;
   .header__logo {
     h1 {
@@ -8,13 +11,18 @@
   }
 
   .header__center {
-    button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    .katalog {
       display: flex;
       align-items: center;
       gap: 12px;
       background: #fbc100;
       border-radius: 12px;
       padding: 14px 20px 14px 16px;
+      height: 48px;
       .bx {
         font-size: 24px;
       }
@@ -25,6 +33,36 @@
         font-weight: 500;
         letter-spacing: 0.3px;
         line-height: 26px;
+        font-family: Roboto-Medium;
+      }
+    }
+
+    .header__center--search {
+      background: #fff;
+      border: 2px solid #fbc100;
+      border-radius: 8px;
+      display: flex;
+      height: 48px;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 0 10px;
+      .search {
+        display: flex;
+        align-self: center;
+
+        input {
+          border: none;
+          outline: none;
+        }
+
+        .header-microphone {
+          border-right: 1px solid #33333379;
+          margin-right: 15px;
+        }
+      }
+
+      .header-search-btn {
+        margin-left: 15px;
       }
     }
   }
