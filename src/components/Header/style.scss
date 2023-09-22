@@ -1,0 +1,31 @@
+.header__navbar {
+  padding: 15px 0;
+  .header__logo {
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+
+  .header__center {
+    button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fbc100;
+      border-radius: 12px;
+      padding: 14px 20px 14px 16px;
+      .bx {
+        font-size: 24px;
+      }
+
+      span {
+        color: #333;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 26px;
+      }
+    }
+  }
+}
