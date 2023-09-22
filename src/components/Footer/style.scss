@@ -1,0 +1,111 @@
+footer {
+    background-color: #333;
+    padding-bottom: 32px;
+    .top {
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 54px;
+        padding-bottom: 32px;
+        .top-left {
+            p {
+                font-size: 14px;
+                color: white;
+                margin-bottom: 14px;
+            }
+            a {
+                font-size: 28px;
+                color: white;
+            }
+            .social-networks {
+                display: flex;
+                gap: 12px;
+                margin-top: 40px;
+                .sn-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #d9d9d933;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .top-left-links {
+                button {
+                    margin-top: 30px;
+                    margin-bottom: 35px;
+                    margin-right: 15px;
+                }
+            }
+            .adress {
+                margin-bottom: 16px;
+                .top-left-adress {
+                    font-size: 14px;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 3px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .top-right {
+            display: flex;
+            align-items: flex-qstart;
+            justify-content: space-around;
+            width: 1068px;
+            h2 {
+                font-size: 18px;
+                color: white;
+                margin-bottom: 20px;
+            }
+            li {
+                a {
+                    color: white;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+            .top-right-right {
+                button {
+                    border: 2px dashed #7a7a7a;
+                    padding: 13px 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 15px;
+                    margin-top: 32px;
+                    border-radius: 5px;
+                    .image {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0 20px 0;
+        p {
+            font-size: 12px;
+            color: white;
+            opacity: 55%;
+            max-width: 530px;
+        }
+        .payment {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+}
