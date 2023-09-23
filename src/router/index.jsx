@@ -5,7 +5,7 @@ import About from "../pages/About";
 import SignUp from "../pages/Auth/Signup";
 import SignIn from "../pages/Auth/Signin";
 import Error from "../pages/Error";
-const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
@@ -31,4 +31,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default Router;
