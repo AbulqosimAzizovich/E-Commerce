@@ -71,6 +71,10 @@ body {
   padding: 0 20px;
 }
 
-.salom{
-  display: flex;
+/*.salom{*/
+/*  display: flex;*/
+/*}*/
+
+.hello {
+    display: flex;
 }
