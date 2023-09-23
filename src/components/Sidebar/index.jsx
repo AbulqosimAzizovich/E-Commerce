@@ -1,13 +1,7 @@
-import "./style.scss";
+import React from "react";
 
-const index = () => {
-  return (
-    <main>
-      <aside>
-        <h1>SideBar</h1>
-      </aside>
-    </main>
-  );
+const Sidebar = () => {
+  return <div>Sidebar</div>;
 };
 
-export default index;
+export default Sidebar;
