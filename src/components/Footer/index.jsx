@@ -15,7 +15,7 @@ const index = () => {
                 </a>
               </li>
               <li className="sn-wrapper">
-                <img src={telegramicon} alt="" />
+                <img src={telegramicon} alt="images" />
               </li>
               <li className="sn-wrapper">
                 <img src={telegramicon} alt="" />
@@ -35,7 +35,7 @@ const index = () => {
                 <img
                   src="https://texnomart.uz/_nuxt/img/appstore-logo-kr.9f12b6a.svg"
                   alt=""
-                />
+                /
               </button>
             </div>
             <div className="adress">
