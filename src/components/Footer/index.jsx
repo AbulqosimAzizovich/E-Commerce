@@ -34,8 +34,8 @@ const index = () => {
               <button>
                 <img
                   src="https://texnomart.uz/_nuxt/img/appstore-logo-kr.9f12b6a.svg"
-                  alt=""
-                /
+                  alt=""/>
+
               </button>
             </div>
             <div className="adress">
