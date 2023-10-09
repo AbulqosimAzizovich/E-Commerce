@@ -1,12 +1,106 @@
-.header {
-  &__logo {
-    color: var(--Text2, #000);
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.72px;
-    color: red;
+header {
+  border-bottom: 0.5px solid #00000067;
+  .header__top-container {
+    background: #000;
+    .header__top {
+      padding: 12px 0;
+      max-width: 1170px;
+      width: 100%;
+      justify-content: end;
+      display: flex;
+      max-width: 1170px;
+      margin: 0 auto;
+      &--title {
+        margin-right: 231px;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        justify-content: center;
+        p {
+          color: var(--Text, #fafafa);
+          font-family: Poppins-Regular;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+        }
+
+        a {
+          color: var(--Text, #fafafa);
+          text-align: center;
+          font-family: Poppins-SemiBold;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+          text-decoration-line: underline;
+        }
+      }
+
+      .space__ {
+        background: #fff;
+      }
+    }
   }
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 16px 0;
+
+    .header__logo {
+      color: var(--Text2, #000);
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.72px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      li {
+        .navlink {
+          color: var(--Text2, #000);
+          text-align: center;
+          font-family: Poppins-Regular;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        .active{
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+
+    .elements {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .search {
+        border-radius: 4px;
+        background: var(--Secondary, #f5f5f5);
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        padding: 7px 20px;
+        input {
+          background: transparent;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.search__btn {
+  cursor: pointer;
 }
